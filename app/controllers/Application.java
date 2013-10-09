@@ -13,6 +13,6 @@ public class Application extends Controller {
 
     public static Result retrievePhoto(String name) {
         Photo photo = models.Photo.findByName(name);
-        return ok(views.html.photos.render(photo,"Woila!"));
+        return ok(views.html.photos.render(photo,"Voila!"));
     }
 }
