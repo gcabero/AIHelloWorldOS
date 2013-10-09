@@ -1,1 +1,1 @@
-web: play run -Dhttp.port=$PORT -Dmongodb.uri=$MONGOHQ_URL ${JAVA_OPTS} $PLAY_OPTS
+web: play run -Dhttp.port=$PORT $PLAY_OPTS -Dmongodb.uri=$MONGOHQ_URL
