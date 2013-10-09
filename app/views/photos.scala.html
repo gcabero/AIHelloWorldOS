@@ -1,0 +1,19 @@
+@(photo: Photo, message: String)
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>MongoDb example</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        <script src="@routes.Assets.at("javascripts/jquery-1.9.0.min.js")" type="text/javascript"></script>
+    </head>
+    <body>
+       <h1> @message </h1>
+        <div>
+            <span><img src="data:image/png;base64,@photo.imageInBinaryFormat" alt="@photo.name"></span>
+            <span style="padding-right: 2em;vertical-align:top">How do I look?  ;-)</span>
+        </div>
+    </body>
+</html>

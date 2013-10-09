@@ -1,0 +1,1 @@
+web: play run -Dhttp.port=$PORT -Dmongodb.uri=$MONGOHQ_URL ${JAVA_OPTS} $PLAY_OPTS
