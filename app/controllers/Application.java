@@ -11,7 +11,6 @@ public class Application extends Controller {
         return redirect(routes.Application.retrievePhoto("pink-panther"));
     }
 
-
     public static Result retrievePhoto(String name) {
         Photo photo = models.Photo.findByName(name);
         return ok(views.html.photos.render(photo,"Woila!"));
